@@ -1,14 +1,14 @@
 # theme.toml template for a Hugo theme
 # See https://github.com/gohugoio/hugoThemes#themetoml for an example
 
-name = "Stack"
+name = "stackfolio"
 license = "GPL-3.0-only"
-licenselink = "https://github.com/CaiJimmy/hugo-theme-stack/blob/master/LICENSE"
-description = "Card-style Hugo theme designed for bloggers"
-homepage = "https://github.com/CaiJimmy/hugo-theme-stack"
-demosite = "https://demo.stack.jimmycai.com"
+licenselink = "https://github.com/LeGmask/stackfolio/blob/master/LICENSE"
+description = "Card-style Hugo theme designed for portfolio, forked from hugo-theme-stack"
+homepage = "https://github.com/LeGmask/stackfolio"
+demosite = "https://n7folio.evann.tech"
 
-tags = ["blog", "responsive", "clean", "light", "dark", "personal"]
+tags = ["portfolio", "blog", "responsive", "clean", "light", "dark", "personal"]
 
 features = [
     "disqus",
@@ -23,5 +23,5 @@ features = [
 min_version = "0.87.0"
 
 [author]
-name = "Jimmy Cai"
-homepage = "https://jimmycai.com"
+name = "Evann 'LeGmask' DREUMONT"
+homepage = "https://evann.tech"
