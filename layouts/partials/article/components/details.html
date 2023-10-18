@@ -24,7 +24,8 @@
     </div>
 
     {{ $showReadingTime := .Params.readingTime | default (.Site.Params.article.readingTime) }}
-    {{ $showDate := not .Date.IsZero }}
+    {{ $displayDate := .Params.showDate | default (true)}}
+    {{ $showDate :=   and $displayDate (not .Date.IsZero) }}
     {{ $showFooter := or $showDate $showReadingTime }}
     {{ if $showFooter }}
     <footer class="article-time">
