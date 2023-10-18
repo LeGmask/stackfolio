@@ -27,7 +27,15 @@
                 {{ else }}
                     <img src="{{ $image.permalink }}" loading="lazy" alt="Featured image of post {{ .Title }}" />
                 {{ end }}
+
             </a>
+
+            {{ $imageLicense := .Params.license.image }}
+            {{ if $imageLicense }}
+                <div class="article-image-license">
+                    {{ $imageLicense | safeHTML }}
+                </div>
+            {{ end }}
         </div>
     {{ end }}
 

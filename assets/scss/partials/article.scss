@@ -45,6 +45,12 @@
     }
 }
 
+.article-image-license {
+    text-align: right;
+    color: var(--card-text-color-secondary);
+    margin: 0.5rem 1rem 0rem 0;
+}
+
 .article-details {
     display: flex;
     flex-direction: column;
