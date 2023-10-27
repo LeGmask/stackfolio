@@ -1,4 +1,11 @@
+{{ define "body-class" }}
+article-page
+{{ end }}
+
 {{ define "main" }}
+    {{ if .Params.displayAsArticle }}
+        {{ partial "article/article.html" . }}
+    {{ else }}
     <header>
         <h3 class="section-title">
             {{ if eq .Parent (.GetPage "/") }}
@@ -43,6 +50,8 @@
             {{ end }}
         </div>
     </header>
+    {{ end }}
+    
 
     {{- $subsections := .Sections -}}
     {{- $pages := .Pages | complement $subsections -}}

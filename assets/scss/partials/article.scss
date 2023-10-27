@@ -195,6 +195,7 @@
 
         .article-image {
             img {
+                border-radius: var(--card-border-radius);
                 width: var(--image-size);
                 height: var(--image-size);
                 object-fit: cover;
