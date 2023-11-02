@@ -1,9 +1,11 @@
 .timeline {
 	display: inline-block;
 	position: relative;
+	
 	@media screen and (min-width: 1330px) {
 		width: 100%;
 	}
+
 	max-width: 1140px;
 	padding: 15px 0;
 
@@ -11,7 +13,7 @@
 		content: '';
 		position: absolute;
 		width: 2px;
-		background:  #5e81ac;
+		background: var(--accent-color-darker);
 		top: 0;
 		bottom: 0;
 		left: 50%;

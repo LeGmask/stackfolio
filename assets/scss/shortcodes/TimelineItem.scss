@@ -10,36 +10,6 @@ li.item {
     padding-right: 30px;
   }
 
-  &.dark {
-    // .content {
-    //   p {
-    //     color: colors.$white-4;
-    //   }
-
-    //   h3 {
-    //     color: colors.$white-0;
-    //   }
-
-    //   h2 {
-    //     color: colors.$accent-2;
-
-    //   }
-
-    // }
-
-    .date {
-        color: var(--accent-color-text);
-    }
-
-    &::before {
-      background: var(--accent-color-darker);
-    }
-
-    &::after {
-      border: 2px solid var(--accent-color-darker);
-    }
-  }
-
   &.work {
     svg {
       background-color: #88c0d0;
@@ -64,7 +34,7 @@ li.item {
     &::before {
       @media screen and (max-width: 1330px) {
         left: 10px;
-        border-color: transparent darken(#5e81ac, 10%) transparent transparent;
+        border-color: transparent var(--accent-color) transparent transparent;
       }
     }
 
@@ -116,7 +86,7 @@ li.item {
 
       @media screen and (max-width: 1330px) {
         left: 10px;
-        border-color: transparent darken(#5e81ac, 10%) transparent transparent;
+        border-color: transparent var(--accent-color) transparent transparent;
       }
     }
 
@@ -150,7 +120,7 @@ li.item {
     top: calc(50% - 8px);
     right: -10px;
     background: #fff;
-    border: 2px solid darken(#5e81ac, 10%);
+    border: 2px solid var(--accent-color-darker);
     border-radius: 16px;
     z-index: 1;
   }
@@ -162,7 +132,7 @@ li.item {
     height: 2px;
     top: calc(50% - 1px);
     right: 8px;
-    background: darken(#5e81ac, 10%);
+    background: var(--accent-color-darker);
     z-index: 1;
   }
 
@@ -174,7 +144,7 @@ li.item {
     text-align: center;
     font-size: 14px;
     font-weight: bold;
-    color: darken(#5e81ac, 10%);
+    color: var(--accent-color-darker);
     text-transform: uppercase;
     letter-spacing: 1px;
     line-height: 1;
@@ -194,11 +164,11 @@ li.item {
     padding: 9px 0;
     top: calc(50% - 20px);
     background: #a3be8c;
-    border: 2px solid darken(#5e81ac, 10%);
+    border: 2px solid var(--accent-color-darker);
     border-radius: 40px;
     text-align: center;
     font-size: 18px;
-    color: darken(#5e81ac, 10%);
+    color: var(--accent-color-darker);
     z-index: 1;
   }
 
@@ -210,7 +180,7 @@ li.item {
       font-size: 20px;
       font-weight: 400;
       line-height: 1.5;
-      color: darken(#5e81ac, 10%);
+      color: var(--accent-color-darker);
     }
 
     .place {
@@ -219,14 +189,14 @@ li.item {
       font-weight: 300;
       font-style: italic;
       margin-bottom: 10px;
-      color: #2e3440;
+      color: var(--card-text-color-tertiary);
     }
 
     .description {
       margin: 0;
       font-size: 16px;
       font-weight: 300;
-      color: #2e3440;
+      color: var(--card-text-color-main);
     }
   }
 
